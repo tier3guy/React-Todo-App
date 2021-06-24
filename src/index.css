@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#items::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7d169;
+  height: 100vh;
+  width: 100vw;
+}
+
+#container{
+  min-height: 70vh;
+  min-width: 26vw;
+  background: #dbdbdb;
+  border-radius: 7px;
+  box-shadow: rgba(34, 34, 68, 0.651) 0px 50px 100px -20px, rgba(0, 0, 0, 0.438) 0px 30px 60px -30px, rgba(7, 28, 48, 0.637) 0px -2px 6px 0px inset;
+  padding: 15px;
+}
+
+#tittle{
+  text-align: center;
+  color: #076aff;
+}
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#todo {
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid rgb(51, 86, 245);
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  width: 250px;
+  background: transparent;
+  height: 35px;
+
+}
+
+#addbtn{
+  margin-left: 15px;
+  font-size: 3rem;
+  background: transparent;
+  color: rgb(40, 2, 255);
+  transition: all 0.3s;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+#addbtn:hover{
+  color: rgba(11, 109, 3, 0.884);
+}
+#todo:focus{
+  border-bottom: 3px solid rgba(164, 52, 255, 0.904);
+}
+#container-input{
+  display: flex;
+  height: 50px;
+}
+
+#container-input{
+  margin: 10px 0px;
+}
+
+#items{
+  height: 350px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+
+#todoItems , li{
+  width: 315px;
+  border-radius: 5px;
+  margin: 5px 0px 10px 0px;
+  box-shadow: rgba(30, 30, 56, 0.281) 0px 2px 5px -1px, rgba(0, 0, 0, 0.671) 0px 1px 3px -1px;
+  display: flex;
+  min-height: 50px;
+}
+
+#cancel{
+  background: transparent;
+  font-size: 1.2rem;
+  color: #076aff;
+  transition: all 0.3s;
+  border: none;
+  padding: 6px 7px;
+  height: 30px;
+  width: 30px;
+}
+
+#cancel:hover{
+  color: red;
+}
+
+#task , li{
+  padding: 10px 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #8707ff;
+  font-weight: bolder;
+}
